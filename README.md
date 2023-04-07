@@ -8,11 +8,12 @@
 
 ### Files:
 ```
-project_code.c
-project_compiled
-sample_text.txt
-README.md
-[OS][Shell Project] 5.pdf
+    .
+    ├── project_code.c          
+    ├── project_compiled                
+    ├── sample_text.txt
+    ├── [OS][Shell Project] 5.pdf
+    └── README.md
 ```
 
 *Note: `sample_text.txt` file is there in order to test the `cat()` function*

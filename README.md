@@ -38,7 +38,7 @@ In this project, we have created a custom terminal app in C programming language
 
 ### Task 1.1: The shell
 ***Advanced: The prompt should look like this: machinename@username:~$***
-```
+```c
 char username[1024];
 char machinename[1024];
 getlogin_r(username, sizeof(username));
@@ -49,7 +49,7 @@ printf("\033[0;32m%s@%s:\033[0m\033[0;34m~\033[0m$ ", machinename, username);
 
 ### Task 1.2: Shell programs/commands
 ***Basic: Implement the basic functionality of the following programs: rm, cat, clear, cowsay.***
-```
+```c
 int rm(char *filename)
 {
     // Remove a file
@@ -101,7 +101,7 @@ int cowsay(char *message)
 ```
 
 ***Intermediate: Provide a few options and/or arguments for at least two programs. Additional points for creativity (e.g. implementing something that does not exist in bash, or differently than it is done in bash).***
-```
+```c
 int displayACowboyRobot(char *message)
 {
     // Display a cowboy robot with ot without a hat
@@ -141,7 +141,7 @@ int cd(char *path)
 
 ### Task 1.3: System calls
 ***Basic: Within the C-programming example of your choice, implement the following system calls: fork(), wait(), and exec().***
-```
+```c
 int forkWaitExecProgramExampleToGetCurrenDirecotyList()
 {
     pid_t pid;
@@ -174,7 +174,7 @@ int forkWaitExecProgramExampleToGetCurrenDirecotyList()
 ```
 
 ***Intermediate: Within the C-programming example of your choice, implement kill(), execv().***
-```
+```c
 int implementKillExecvAndCreateANewDirectory(char *dirName)
 {
     pid_t pid;
@@ -209,7 +209,7 @@ int implementKillExecvAndCreateANewDirectory(char *dirName)
 ```
 
 ***Additionally: Carefully explore and then implement the forkbomb.***
-```
+```c
 int forkbomb()
 {
     printf("Forkbombing....\n");
@@ -223,7 +223,7 @@ int forkbomb()
 
 ### Task 1.4:
 ***Add some colors to your shell and name***
-```
+```c
 printf("\033[0;32m%s@%s:\033[0m\033[0;34m~\033[0m$ ", machinename, username);
 // and
 printf("\033[0;31mError: Command not found: %s\033[0m\n", tokens[0]);
